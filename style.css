@@ -1,0 +1,497 @@
+/* Reset stili base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* Header */
+/* Header e Barra di Navigazione */
+.main-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: #ebb44d; /* La barra gialla superiore */
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    align-items: center;
+}
+
+.logo-text {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Contenitore Immagine Sfondo */
+.hero-image {
+    height: 350px;
+    background-image: url('assets/sfondoprincipale.jpg'); /* Ricordati .jpg! */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    bottom: -60px; /* Lo spinge a metà tra foto e bianco */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.main-logo {
+    width: 220px;
+    height: 220px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    object-fit: contain;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Leggera ombra per staccare dal fondo */
+}
+
+/* Intro */
+.intro {
+    margin-top: 80px;
+    padding: 40px 10%;
+    text-align: left;
+}
+
+.intro-content h2 {
+    display: inline-block;
+    font-size: 32px;
+    margin-right: 20px;
+}
+
+.intro-content p {
+    display: inline;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.separator {
+    width: 80%;
+    margin: 20px auto;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+/* Griglia Piazze */
+.featured {
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 40px;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.grid-piazze {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ebb44d; /* Colore giallo dell'immagine */
+    padding: 15px;
+    border-radius: 25px;
+    width: 300px;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #ebb44d;
+    padding: 50px 10%;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-col h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.footer-col p, .footer-col a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.logo-footer h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+/* piazzegenerali */
+/* Stili specifici per la pagina generale */
+.intro-piazze {
+    text-align: center;
+    padding: 80px 20px 20px 20px;
+    position: relative;
+}
+
+.intro-piazze h1 {
+    font-size: 28px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.separator-short {
+    width: 60%;
+    margin: 30px auto;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+.grid-container {
+    padding: 20px 5%;
+    margin-bottom: 50px;
+}
+
+/* Modifica alla griglia per farla andare a capo correttamente ogni 3 foto */
+.grid-piazze {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Questo permette di creare le righe da 3 */
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Decorazione pallini chiari (opzionale, come da foto) */
+.bubble-decoration {
+    position: absolute;
+    top: 40px;
+    left: 30%;
+    width: 100px;
+    height: 100px;
+    background: rgba(235, 180, 77, 0.1);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+/* eventi */ 
+/* =========================================
+   RESET E STILI DI BASE
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================================
+   HEADER E NAVIGAZIONE (Barra Gialla)
+   ========================================= */
+.main-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: #ebb44d; /* Giallo ocra dell'immagine */
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5%;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-text {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff; /* Effetto al passaggio del mouse */
+}
+
+/* =========================================
+   IMMAGINE HERO E LOGO CENTRALE
+   ========================================= */
+.hero-image {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo-container {
+    position: absolute;
+    bottom: -70px; /* Posiziona il logo a cavallo tra foto e bianco */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.main-logo {
+    width: 220px;
+    height: 220px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px;
+    object-fit: contain;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* =========================================
+   TITOLI E INTRODUZIONE
+   ========================================= */
+.intro, .intro-piazze {
+    margin-top: 100px; /* Spazio per far respirare il logo */
+    padding: 40px 10%;
+    text-align: center;
+}
+
+.intro-content h2, .intro-piazze h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-transform: none;
+}
+
+.intro-content p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+.separator, .separator-short {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+/* =========================================
+   GRIGLIA DELLE CARD (Piazze ed Eventi)
+   ========================================= */
+.grid-container {
+    padding: 20px 5% 80px 5%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.grid-piazze {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra le card se sono meno di 3 */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #ebb44d;
+    padding: 15px;
+    border-radius: 25px;
+    width: 320px; /* Larghezza fissa per mantenere l'aspetto del mockup */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Piccola animazione al passaggio */
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #000;
+    padding: 0 10px;
+    text-align: left;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+footer {
+    background-color: #ebb44d;
+    padding: 60px 10%;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-col {
+    min-width: 200px;
+}
+
+.footer-col h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.footer-col p, .footer-col a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.logo-footer h2 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+/* =========================================
+   RESPONSIVE (Per cellulari)
+   ========================================= */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/* catania.html */
+/* Stili per la pagina di dettaglio (Catania) */
+.piazza-detail {
+    max-width: 900px;
+    margin: 100px auto 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.piazza-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.main-image-container {
+    background-color: #ebb44d; /* La fascia gialla laterale che si vede nella foto */
+    padding: 20px;
+    border-radius: 20px;
+    margin: 30px 0;
+}
+
+.piazza-full-image {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+}
+
+.piazza-text {
+    text-align: justify; /* Testo giustificato come nell'immagine */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 30px;
+    padding: 0 10px;
+}
+
+.piazza-text p {
+    margin-bottom: 20px;
+}
+
+
+/* messina.html */
+
+
+/* enna.html */
+
+
+/* palermo.html */
+
+
+/* comiso.html */
+
+
+/* alcamo.html */
+
+
+/* ortigia.html */
